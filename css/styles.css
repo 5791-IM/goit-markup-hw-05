@@ -522,14 +522,14 @@ img {
 }
 .footer-input {
   color: var(--WHITE, #fff);
-  background-color: ;
   font-size: 12px;
-  line-height: 2;
+  line-height: 1.5;
   letter-spacing: 0.04em;
   padding: 8px 16px;
   border-radius: 4px;
   border: 1px solid var(--WHITE, #fff);
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   background-color: transparent;
   width: 264px;
   height: 40px;
@@ -590,7 +590,7 @@ img {
   pointer-events: auto;
 }
 .modal {
-  padding: 24px;
+  padding: 72px 24px 24px 24px;
   position: absolute;
   flex-direction: column;
   top: 50%;
@@ -618,6 +618,7 @@ img {
   height: 24px;
   border: rgba(0, 0, 0, 0.1);
   background-color: #e7e9fc;
+  border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     border 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -637,7 +638,7 @@ img {
 }
 
 .modal-text {
-  padding: 72px 24px 16px 24px;
+  margin-bottom: 16px;
   width: 100%;
   color: var(--NAVY-BLUE, #2e2f42);
   text-align: center;
@@ -669,6 +670,7 @@ img {
   text-decoration: none;
 }
 .form-field-input {
+  margin-bottom: 16px;
   position: relative;
 }
 .form-input {
@@ -730,7 +732,7 @@ img {
   letter-spacing: 0.04em;
 }
 .checkox-privacy-span {
-  display: inline-block;
+  display: inline-flex;
   align-items: center;
   justify-content: center;
   width: 16px;
@@ -747,9 +749,9 @@ img {
 .icon-privacy {
   fill: #f4f4fd;
 }
-.input[type='checkbox']:checked + label span {
+input[type='checkbox']:checked + label span {
   background-color: var(--OCEAN, #404bbf);
-  fill: CLOUD;
+  fill: #f4f4fd;
   border: none;
 }
 .link-privacy {
@@ -758,6 +760,7 @@ img {
 }
 
 .modal-button {
+  border: none;
   margin: 0 auto;
   display: block;
   padding: 16px 32px;
@@ -767,7 +770,6 @@ img {
   height: 56px;
   cursor: pointer;
   border-radius: 4px;
-  border: 1px solid transparent;
   background-color: var(--IRIS, #4d5ae5);
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
