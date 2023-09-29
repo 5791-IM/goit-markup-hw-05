@@ -549,7 +549,6 @@ img {
   padding: 8px 24px;
   justify-content: center;
   align-items: center;
-  gap: 16px;
   border: none;
   border-radius: 4px;
   background: var(--IRIS, #4d5ae5);
@@ -568,6 +567,7 @@ img {
   background-color: var(--ocean, #404bbf);
 }
 .subscribe-icon {
+  margin-left: 16px;
   fill: var(--color1, #fff);
 }
 
