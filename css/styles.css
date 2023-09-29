@@ -537,6 +537,13 @@ img {
 .footer-input:focus {
   outline: none;
 }
+.footer-input::placeholder {
+  color: #ffffff;
+}
+.footer-input:hover::placeholder,
+.footer-input:focus::placeholder {
+  color: #ffffff;
+}
 .subscribe-button {
   display: inline-flex;
   padding: 8px 24px;
@@ -561,10 +568,7 @@ img {
   background-color: var(--ocean, #404bbf);
 }
 .subscribe-icon {
-  margin-left: 16px;
   fill: var(--color1, #fff);
-  width: 24px;
-  height: 24px;
 }
 
 /* Finish Footer */
@@ -670,7 +674,6 @@ img {
   text-decoration: none;
 }
 .form-field-input {
-  margin-bottom: 16px;
   position: relative;
 }
 .form-input {
